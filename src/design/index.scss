@@ -4,6 +4,8 @@
 @import 'layers';
 @import 'sizes';
 @import 'typography';
+// Adding the bootstrap tables scss file:
+@import "tables";
 
 :export {
   // Any values that need to be accessible from JavaScript

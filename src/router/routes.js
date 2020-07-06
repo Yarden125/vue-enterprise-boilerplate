@@ -80,6 +80,16 @@ export default [
     },
   },
   {
+    // Adding the route to playgroundView
+    path: '/playground',
+    name: 'PlaygroundView',
+    component: () => lazyLoadView(import('@views/playgroundView.vue')),
+    meta: {
+      authRequired: true,
+    },
+    props: (route) => ({ user: store.state.auth.currentUser || {} }),
+  },
+  {
     path: '/404',
     name: '404',
     component: require('@views/_404.vue').default,

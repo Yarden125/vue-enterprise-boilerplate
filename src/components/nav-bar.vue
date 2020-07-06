@@ -21,13 +21,17 @@ export default {
           name: 'logout',
           title: 'Log out',
         },
+        {
+          name: 'PlaygroundView',
+          title: 'Playground',
+        },
       ],
       loggedOutNavRoutes: [
         {
           name: 'login',
           title: 'Log in',
         },
-      ],
+      ]
     }
   },
   computed: {
